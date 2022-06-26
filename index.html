@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Consultar cidade e estado pelo cep</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/css.css">
+</head>
+
+<body>
+  <div class="forms-form">
+    <form>
+      <div class="form-group text-center">
+        <h4>Consultar cidade e estado pelo cep</h4>
+      </div>
+      <hr>
+      <div class="form-group">
+        <span>
+          <div id="message"></div>
+        </span>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control item" id="zip" minlength="8" maxlength="8"
+          placeholder="Digite um cep...">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control item" id="country" placeholder="Cidade" disabled>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control item" id="state" placeholder="Estado" disabled>
+      </div>
+      <div class="form-group">
+        <button type="button" id="checkZip" class="btn btn-block create-account">Consultar CEP</button>
+      </div>
+    </form>
+    <div class="social-media">
+      <div id="flag"></div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="assets/js/js.js"></script>
+</body>
+
+</html>
